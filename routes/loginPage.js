@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 const expess=require('express');
 
 const router=expess.Router();

@@ -20,7 +20,6 @@ router.get('/',(req,res,next) =>{
                 </form>`)
     })
 });
-
 router.post('/',(req,res,next) =>{
 
     fs.writeFile('message.txt',`${req.body.title} : ${req.body.message} `,{flag :'a'} ,(err)=>{
@@ -34,5 +33,4 @@ router.post('/',(req,res,next) =>{
     })
     
 })
-
 module.exports = router;
